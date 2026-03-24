@@ -38,4 +38,4 @@
   tasks:
     - name: Split the variable
       ansible.builtin.debug:
-        msg: "{{ Course | Split(',') }}"
+        msg: "{{ Course | split(',') }}"
