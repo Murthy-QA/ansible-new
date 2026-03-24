@@ -3,11 +3,11 @@
   hosts: localhost
   tasks:
     - name: Variables with values
-  vars:
-      Course: "Devops"
-      Duration: 100Hrs
-      Trainer: "Siva"
-  ansible.builtin.debug:
-    msg: "Course value is: {{Course}},
-          Duration value is: {{Duration}}
-          Trainer is: {{Trainer}}"
+      vars:
+        Course: "Devops"
+        Duration: 100Hrs
+        Trainer: "Siva"
+      ansible.builtin.debug:
+        msg: "Course value is: {{Course}},
+              Duration value is: {{Duration}}
+              Trainer is: {{Trainer}}"
