@@ -36,5 +36,6 @@
   tasks:
     - name: Copy nginx config file
       ansible.builtin.copy:
-        src: nginx.conf
+        src: /home/ec2-user/nginx.conf
         dest: /etc/nginx/nginx.conf
+        backup: yes
