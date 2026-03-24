@@ -3,7 +3,7 @@
   hosts: localhost
   connection: local
   vars: 
-    Course: "Devops"
+    Course: "devops"
   tasks:
     - name: Convert into Uppercase
       ansible.builtin.debug:
