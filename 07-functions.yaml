@@ -5,6 +5,6 @@
   vars: 
     Course: "Devops"
   tasks:
-    - name: Chaging upper case
+    - name: Convert into Uppercase
       ansible.builtin.debug:
       msg: "{{ Course | upper }}"
