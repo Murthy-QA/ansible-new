@@ -2,7 +2,7 @@
 - name: Variables playbook
   hosts: localhost
   tasks:
-    - name: Variables with values
+    - name: Task level Variables with values
       vars:
         Course: "Devops"
         Duration: 100Hrs
