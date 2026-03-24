@@ -34,7 +34,7 @@
   hosts: localhost
   connection: local
   vars: 
-    Course: "DEVOPS"
+    Course: "DEVOPS is good subject"
   tasks:
     - name: Split the variable
       ansible.builtin.debug:
