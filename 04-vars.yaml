@@ -1,0 +1,13 @@
+# Variables in Ansible
+- name: Variables playbook
+  hosts: localhost
+  vars:
+    Course: "Devops"
+    Duration: 100Hrs
+    Trainer: "Siva"
+  tasks:
+    - name: Variables with values
+      ansible.builtin.debug:
+        msg: "Course value is: {{Course}},
+              Duration value is: {{Duration}}
+              Trainer is: {{Trainer}}"
