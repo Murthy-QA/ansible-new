@@ -3,12 +3,15 @@
   hosts: localhost
   become: yes
   tasks:
-  - name: Install nginx
+  - name: Install nginx & python
     ansible.builtin.package:
-      name: nginx
+      name:
+        - nginx
+        - python3
       state: present
   - name: Start nginx
     ansible.builtin.systemd:
       name: nginx
       state: started
       enabled: yes
+  
