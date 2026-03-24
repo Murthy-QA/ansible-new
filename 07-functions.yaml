@@ -18,3 +18,24 @@
     - name: Convert into Lowercasecase
       ansible.builtin.debug:
         msg: "{{ Course | lower }}"
+
+# Functions in Ansible
+- name: Converting into Uppercase
+  hosts: localhost
+  connection: local
+  vars: 
+    Course: "devops"
+  tasks:
+    - name: Convert into Uppercase
+      ansible.builtin.debug:
+        msg: "{{ Course | upper }}"
+
+- name: Split the varaible
+  hosts: localhost
+  connection: local
+  vars: 
+    Course: "DEVOPS"
+  tasks:
+    - name: Split the variable
+      ansible.builtin.debug:
+        msg: "{{ Course | Split(',') }}"
