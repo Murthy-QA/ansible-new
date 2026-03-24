@@ -1,11 +1,21 @@
 # Multi-Play book
-- name: Multiple Play and tasks
+- name: First Play and task
   hosts: localhost
   tasks:
-    - name: Play 01 and Task 01
+    - name: First Play 01 and Task 01
       ansible.builtin.debug:
         msg: This is from Play 01 and Task 01
     - name: Play 02 and Task 02
+      ansible.builtin.debug:
+        msg: This is from Play 02 and Task 02
+
+- name: Second Play and task
+  hosts: localhost
+  tasks:
+    - name: Second Play 01 and Task 01
+      ansible.builtin.debug:
+        msg: This is from Play 01 and Task 01
+    - name: Second Play 02 and Task 02
       ansible.builtin.debug:
         msg: This is from Play 02 and Task 02
     
