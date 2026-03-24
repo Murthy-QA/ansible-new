@@ -7,4 +7,4 @@
   tasks:
     - name: Convert into Uppercase
       ansible.builtin.debug:
-      msg: "{{ Course | upper }}"
+        msg: "{{ Course | upper }}"
