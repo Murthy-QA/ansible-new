@@ -7,10 +7,10 @@
   tasks:
     - name: If number is greater than 50
       ansible.builtin.debug:
-        msg: "This {{number}} is greater than 50"
+        msg: "This {{ number }} is greater than 50"
       when: number > 50
     
-    - name: If number < 50
+    - name: If number <=50
       ansible.builtin.debug:
-        msg: "This {{number}} is less than 50"
-      when: number < = 50
+        msg: "This {{ number }} is less than 50"
+      when: number <=50
