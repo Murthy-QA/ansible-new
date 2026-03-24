@@ -1,6 +1,6 @@
-# Fits playbook example
+# First playbook example
 - name: Show date example
-  hosts: local
+  hosts: localhost
   tasks:
   - name: Show date
     command: date
