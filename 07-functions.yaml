@@ -8,3 +8,13 @@
     - name: Convert into Uppercase
       ansible.builtin.debug:
         msg: "{{ Course | upper }}"
+
+- name: Converting into Lowercase
+  hosts: localhost
+  connection: local
+  vars: 
+    Course: "DEVOPS"
+  tasks:
+    - name: Convert into Lowercasecase
+      ansible.builtin.debug:
+        msg: "{{ Course | lower }}"
