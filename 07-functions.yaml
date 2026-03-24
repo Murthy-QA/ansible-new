@@ -1,0 +1,10 @@
+# Functions in Ansible
+- name: Converting into Uppercase
+  hosts: localhost
+  connection: local
+  vars: 
+    Course: "Devops"
+  tasks:
+    - name: Chaging upper case
+      ansible.builtin.debug:
+      msg: "{{ Course | upper }}"
