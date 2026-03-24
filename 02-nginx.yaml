@@ -1,6 +1,7 @@
 # Install Nginx example
 - name: Install & Start Nginx
   hosts: localhost
+  become: yes
   tasks:
   - name: Install nginx
     ansible.builtin.package:
