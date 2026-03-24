@@ -30,12 +30,12 @@
       ansible.builtin.debug:
         msg: "{{ Course | upper }}"
 
-- name: Split the varaible
+- name: Copy the files
   hosts: localhost
   connection: local
-  vars: 
-    Course: "DEVOPS is good subject"
   tasks:
-    - name: Split the variable
-      ansible.builtin.debug:
-        msg: "{{ Course | split(',') }}"
+    - name: Copy nginx config file
+      ansible.builtin.copy:
+        src: nginx.conf
+        dest: /etc/nginx/nginx.conf
+        backup: yes
