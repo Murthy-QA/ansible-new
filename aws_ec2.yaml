@@ -1,7 +1,7 @@
 # aws_ec2.yaml
 plugin: amazon.aws.aws_ec2
 regions:
-  - us-east-1
+  - us-east-1d
 filters:
   instance-state-name: running
 keyed_groups:
